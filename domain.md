@@ -4,10 +4,10 @@ This document shows an overview of what is the application's reference domain an
 The main domain is: **Energy Optimization**
 
 The identified sub-domains are:
-- [⚡ Energy Production](#energy-production)
-- [🏡​ Home Energy](#home-energy)
-- [📈​ Forecast](#forecast)
-- [⛏️​ Mining](#mining)
+- [⚡ Energy Production](#-energy-production)
+- [🏡​ Home Energy](#-home-energy)
+- [📈​ Forecast](#-forecast)
+- [⛏️​ Mining](#-mining)
 
 ## ⚡ Energy Production
 This subdomain takes care of the aspects of energy production, whether from a photovoltaic, wind or hydroelectric plant. Here elements are taken into consideration that concern the quantity of energy produced, the state of the batteries (if there are any), the power of the plant, total energy supplied, etc.
