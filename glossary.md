@@ -1,7 +1,7 @@
-# What is this glossary?
-Following the Ubiquitous Language approach of DDD, this glossary is organized by sub-domains and contains simplified definitions gathered from domain experts. Its purpose is to establish a clear and consistent vocabulary, essential for effective communication and development of the application.
+# What is this?
+Following the **Ubiquitous Language** approach of Domain-Driven Design (DDD), this glossary is organized by sub-domains and contains simplified definitions gathered from domain experts. Its purpose is to establish a clear and consistent vocabulary, essential for effective communication and development of the application.
 
-## Energy Production
+## ⚡ Energy Production
 **Inverter**: A machine that produces energy using solar panels. It may have one or multiple MPPT and It can be on-grid or off-grid.
     
 **MPPT**: *Maximum Power Point Tracking* is an hardware component, often already included into the invertes, that aims to optimize the energy from the solar panels
@@ -27,7 +27,7 @@ Following the Ubiquitous Language approach of DDD, this glossary is organized by
 **Loads**: They are the devices that use energy
     
 
-## Mining
+## ⛏️​ Mining
 **Hashrate**: Measurement of the computing power of a miner
     
 **Miner**: A machine that uses electrical energy to solve mathematical calculations and produce heat
