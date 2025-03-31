@@ -86,7 +86,7 @@ This logic ensures that mining is halted at the right time, balancing energy eff
 This is the very first phase of development and how the application takes shape.
 
 Following some resources:
-- 📒​ A glossary of terms for a better understending -> [Glossary](./modelling/glossary.md)
+- 📒​ A glossary of terms for a better understanding -> [Glossary](./modelling/glossary.md)
 - 🧑‍💻​ Building the project:
   - 🧠​ Defining main domain, sub-domains and concerns -> [Step 1](./modelling/steps/step_1.md)
   - 🧩​ Defining entities and relations between sub-domains -> Step 2
