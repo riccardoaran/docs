@@ -50,7 +50,7 @@ The automations described below are part of an ongoing experiment to **optimize 
 
 ### How the Automations Work
 
-These Home Assistant automations are designed to efficiently manage the **switching ON and OFF** of a miner based on battery level, solar forecast, and real-time solar power availability. The goal is to maximize energy efficiency while ensuring that battery power is used optimally.
+These automations are designed to efficiently manage the **switching ON and OFF** of a miner based on battery level, solar forecast, and real-time solar power availability. The goal is to maximize energy efficiency while ensuring that battery power is used optimally.
 
 ### **1. Switching ON the Miner**
 
@@ -80,6 +80,16 @@ By adjusting the shutdown threshold dynamically according to solar forecasts, th
 - On days with lower expected solar production, it preserves more battery energy by shutting down sooner.
 
 This logic ensures that mining is halted at the right time, balancing energy efficiency with the need to sustain battery reserves for non-mining power consumption.
+
+## 📍​ Development
+
+This is the very first phase of development and how the application takes shape.
+
+Following some resources:
+- 📒​ A glossary of terms for a better understending -> [Glossary](./modelling/glossary.md)
+- 🧑‍💻​ Building the project:
+  - 🧠​ Defining main domain, sub-domains and concerns -> [Step 1](./modelling/steps/step_1.md)
+  - 🧩​ Defining entities and relations between sub-domains -> Step 2
 
 ---
 
