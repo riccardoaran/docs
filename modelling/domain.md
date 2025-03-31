@@ -1,5 +1,5 @@
 # What is this?
-This document shows an overview of what is the application's reference domain and what are the sub-domains
+This document shows an overview of what is the application's reference domain and what are the sub-domains.
 
 The main domain is: **Energy Optimization**
 
