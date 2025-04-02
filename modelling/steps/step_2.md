@@ -35,5 +35,7 @@
 - 🟣 **External Integrations** (Supporting):
     - `ForecastProvider` (Interface/Adapter): Represents the connection to a weather/solar forecast service.
     - (Potentially) `GridDataService` (Interface/Adapter): Potential future integration for grid prices.
-7. **Define Relationships Between Subdomains (Context Mapping):**
-    - to be completed ...
+
+## Define Relationships Between Subdomains (Context Mapping)
+
+- to be completed ...
