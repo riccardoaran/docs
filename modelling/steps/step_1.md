@@ -30,7 +30,7 @@ It's the *optimization of energy usage* by integrating Bitcoin mining. This is
     - **Mining Device Management**: Needs to execute the commands from the core domain (turn on/off) and maybe report miner status. It doesn't *decide* when to turn on/off.
     - **Heat Management**: Mentioned as a benefit, but the *automation* focus is on energy surplus, not primarily heat demand (though it could be a factor later). Let's keep it as supporting for now.
     - **Mining Performance Tracking**: Important for the user, but the core *automation* doesn't strictly depend on real-time profitability calculations (though it could influence user *goals*). Let's make it supporting.
-    - **Home Energy Monitoring**: Needs to provide data (estimate consumptions, times) of the home energy loads (washing machine, dishwasher, boiler) to the core domain. It can be a **core subdomain** (thanks to [this post](https://vladikk.com/2018/01/26/revisiting-the-basics-of-ddd/)), but let's keep it as supporting for now. 
+    - **Home Energy Monitoring**: Needs to provide data (estimate consumptions, times) of the home energy loads (Washing machine, Dishwasher, Boiler, EV Charger) to the core domain. It can be a **core subdomain** (thanks to [this post](https://vladikk.com/2018/01/26/revisiting-the-basics-of-ddd/)), but let's keep it as supporting for now. 
 - ⚫ **Generic:** These are common problems solved elsewhere, not specific to this domain.
     - **User Configuration**: Standard user accounts, settings, etc.
     - **External Data Integration** (e.g., Weather/Solar Forecast): Getting data from external services.

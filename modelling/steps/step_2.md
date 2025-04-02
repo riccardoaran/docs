@@ -27,7 +27,7 @@
     - `PoolConnectionDetails` (Value Object/Entity?): Details about the mining pool being used.
 - 🟣 **Home Consumption Analytics** (Supporting):
     - `HomeLoadsProfile` (Aggregate Root): Represents the typical energy load profile of a household. It encapsulates the knowledge of how energy is consumed in the domestic environment over time.
-    - *needs to be better defined ...*
+    - `LoadDevice` (Entity): It represents a specific energy load inside the home (e.g. Dishwasher, Boiler, EV Charger). It has `ConsumptionForecast` that is a forecast of energy consumption for a given future period.
 - 🟣 **User Configuration & Interaction** (Supporting):
     - `User` (Entity): The system user (initially admin only).
     - `SystemSettings` (Entity/VO): Global or specific settings (e.g. thresholds, goals).
@@ -38,4 +38,12 @@
 
 ## Define Relationships Between Subdomains (Context Mapping)
 
-- to be completed ...
+- **Energy System Monitoring** ➡️ **Energy Optimization & Mining Automation**: Provides `EnergyStateSnapshot` (data).
+- **External Integrations** (Forecast) ➡️ **Energy Optimization & Mining Automation**: Provides `ForecastData`.
+- **User Configuration & Interaction** ➡️ **Energy Optimization & Mining Automation**: Provides user goals/parameters for `OptimizationPolicy`.
+- **Energy Optimization & Mining Automation** ➡️ **Mining Device Management**: Sends `ControlCommand` (e.g., `TurnOn` Miner X).
+- **Mining Device Management** ➡️ **Energy Optimization & Mining Automation**: Reports `Miner`'s' `Status` (e.g., successfully turned on, error).
+- **Mining Device Management** ➡️ **Mining Performance Analysis**: Provides data on miner uptime, possibly hash rate if monitored directly.
+- **External Integrations** (Mining Pool API) ➡️ **Mining Performance Analysis**: Provides `MiningReward` data.
+- **Home Consumption Analytics** ➡️ **Energy Optimization & Mining Automation**: Provides sum of `ConsumptionForecast`.
+- **Energy System Monitoring**, **Mining Device Management**, **Mining Performance Analysis**, **Heat Utilization** ➡️ **User Configuration & Interaction**: Provides data for display to the user.
