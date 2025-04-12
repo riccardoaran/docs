@@ -1,3 +1,4 @@
 title: Documentazione
-theme: minima
+description: Una raccolta di guide e approfondimenti
+theme: jekyll-theme-midnight
 markdown: kramdown
