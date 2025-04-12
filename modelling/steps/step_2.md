@@ -1,3 +1,7 @@
+---
+title: Entities and Value Objects
+---
+
 ## Identify Entities and Value Objects within Each Subdomain
 
 - 🟢 **Energy Optimization & Mining Automation** (Core):
