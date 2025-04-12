@@ -1,4 +1,7 @@
-# What is this?
+---
+Glossary
+---
+
 Following the **Ubiquitous Language** approach of Domain-Driven Design (DDD), this glossary is organized by sub-domains and contains simplified definitions gathered from domain experts. Its purpose is to establish a clear and consistent vocabulary, essential for effective communication and development of the application.
 
 ## ⚡ Energy Production
