@@ -1,3 +1,10 @@
+⚠️ *Disclaimer: This project is in a preliminary state and under active development. Features and functionality may change significantly.*
+
+➡️ *Development Note: The core of Edge Mining will be developed in the [core repository](https://github.com/edge-mining/core), which is intended to serve as the main engine of the system. This repository is specifically dedicated to the Home Assistant add-on.*
+
+📚 *This is the repository for the Home Assistant [add-on](https://github.com/edge-mining/addon), which is still in development.*
+
+
 # ⚡ Bitcoin Mining for Energy Efficiency
 
 Bitcoin mining represents a unique opportunity to improve efficiency in both the production and use of energy, whether on an industrial scale or for smaller setups. This project aims to make mining accessible and easy to implement, providing tools to integrate mining into energy systems and maximize the use of the energy produced.
