@@ -46,6 +46,7 @@ Our project aims to develop a mining management system that:
 This is the very first phase of development and how the application takes shape.
 
 Following some resources:
+- 📋 The subdivision of domains and subdomains -> [Domains](./modelling/domain.md)
 - 📒​ A glossary of terms for a better understanding -> [Glossary](./modelling/glossary.md)
 - 🧑‍💻​ Building the project:
   - 🧠​ Defining main domain, sub-domains and concerns -> [Step 1](./modelling/steps/step_1.md)
