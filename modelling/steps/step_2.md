@@ -1,5 +1,5 @@
 ---
-title: Step 2 – Il Modello
+Entities and Value Objects
 ---
 
 ## Identify Entities and Value Objects within Each Subdomain
