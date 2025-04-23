@@ -29,12 +29,24 @@ Following the **Ubiquitous Language** approach of Domain-Driven Design (DDD), th
     
 
 ## ⛏️​ Mining
-**Hashrate**: Measurement of the computing power of a miner
-    
 **Miner**: A machine that uses electrical energy to solve mathematical calculations and produce heat
-    
+
+**Hashboard**: ...
+
+**Control board**: ...
+
+**Fan**: ...
+
+**Smart plug**: ...
+
+
+
+**Hashrate**: Measurement of the computing power of a miner
+
 **Energy consumption**: The electrical energy used by the miner
-    
-**Core temperatures**: The temperature of the main chips
-    
+
+**Core temperature**: The temperature of the main chips
+
 **Efficiency**: The power consumption related to the produced hashrate
+
+**Mining pool**: ...
