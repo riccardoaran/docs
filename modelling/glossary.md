@@ -4,14 +4,16 @@ Following the **Ubiquitous Language** approach of Domain-Driven Design (DDD), th
 
 ## ⚡ Energy Production
 **Inverter**: A machine that produces energy using solar panels. It may have one or multiple MPPT and It can be on-grid or off-grid.
+
+**On-Grid Inverter**: An inverter that is physically connected to the national electrical grid
+    
+**Off-Grid Inverter**: An inverter that is not connected to the national electrical grid and it uses batteries
+
+**Hybrid Inverter**: ...
     
 **MPPT**: *Maximum Power Point Tracking* is an hardware component, often already included into the invertes, that aims to optimize the energy from the solar panels
     
 **Solar panel**: Hardware piece that produce energy from the sun.
-    
-**Inverter On-Grid**: An inverter that is physically connected to the national electrical grid
-    
-**Inverter Off-Grid**: An inverter that is not connected to the national electrical grid and it uses batteries
     
 **Battery**: An hardware piece that stores energy
     
