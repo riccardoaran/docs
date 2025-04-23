@@ -45,7 +45,8 @@ Our project aims to develop a mining management system that:
 
 Following the general overview of the project, the following link provides a deeper technical insight into how the system is structured according to Domain-Driven Design (DDD) principles. It identifies the core domain of energy optimization, categorizes supporting and generic subdomains, defines the internal structure of each, and maps the interactions between them. This approach allows us to align the software architecture with real-world needs, ensuring clarity, modularity, and scalability. The document is continuously evolving and reflects an iterative design process—nothing is final, and all aspects are considered open to revision as the system and its understanding mature over time.
 
-[Domain-Driven Architecture Overview]
+[Domain-Driven Architecture Overview](https://github.com/edge-mining/docs/blob/main/modelling/domain-driven-architecture-overview.md)
+
 
 ---
 
