@@ -1,6 +1,4 @@
----
-title: Entities and Value Objects
----
+# Entities and Value Objects
 
 ## Identify Entities and Value Objects within Each Subdomain
 
