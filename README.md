@@ -47,6 +47,9 @@ Following the general overview of the project, the following link provides a dee
 
 [Domain-Driven Architecture Overview](https://github.com/edge-mining/docs/blob/main/modelling/domain-driven-architecture-overview.md)
 
+The following link provides access to a shared vocabulary used throughout the Edge Mining project, following the principles of Ubiquitous Language from Domain-Driven Design (DDD). It is organized by subdomain and offers simplified definitions based on domain expertise. The goal is to ensure consistent communication between developers, domain experts, and stakeholders, and to serve as a reference point during design and implementation.
+
+[Glossary](https://github.com/edge-mining/docs/blob/main/modelling/glossary.md)
 
 ---
 
