@@ -1,4 +1,6 @@
-# Domain and Sub-Domains
+---
+title: Domain and Sub-Domains
+---
 
 This document shows an overview of what is the application's reference domain and what are the sub-domains. It is useful in the very first steps (*and also in the following ones*) to identify wich are the area of interest, this enables the identification of distinct areas of functionality within the application.
 
