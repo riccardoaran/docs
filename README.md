@@ -43,14 +43,9 @@ Our project aims to develop a mining management system that:
 
 ## 📍​ Development
 
-This is the very first phase of development and how the application takes shape.
+Following the general overview of the project, the following link provides a deeper technical insight into how the system is structured according to Domain-Driven Design (DDD) principles. It identifies the core domain of energy optimization, categorizes supporting and generic subdomains, defines the internal structure of each, and maps the interactions between them. This approach allows us to align the software architecture with real-world needs, ensuring clarity, modularity, and scalability. The document is continuously evolving and reflects an iterative design process—nothing is final, and all aspects are considered open to revision as the system and its understanding mature over time.
 
-Following some resources:
-- 📋 The subdivision of domains and subdomains -> [Domains](./modelling/domain.md)
-- 📒​ A glossary of terms for a better understanding -> [Glossary](./modelling/glossary.md)
-- 🧑‍💻​ Building the project:
-  - 🧠​ Defining main domain, sub-domains and concerns -> [Step 1](./modelling/steps/step_1.md)
-  - 🧩​ Defining entities and relations between sub-domains -> [Step 2](./modelling/steps/step_2.md)
+[Domain-Driven Architecture Overview]
 
 ---
 
