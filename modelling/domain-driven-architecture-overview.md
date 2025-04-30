@@ -28,9 +28,7 @@ This is the **Core** domain that captures the intelligence, making smart decisio
 **Components**:
   - `OptimizationPolicy` (Entity? Aggregate Root?): A collection of rules and goals driving the automation decisions. It makes decisions based on input (e.g. "*stabilizes hashrate*", "*battery health*" or "*heats the room*").
   - `AutomationRule` (Entity? Maybe Value Object within a Policy?): Represents a user-defined or system rule (e.g., "*turn on if battery > 80% AND forecast > X*"). The *logic* itself.
-  - `EnergyStateSnapshot` (Value Object): Represents the state of the energy system at a point in time (*production*, *consumption*, *battery level*, *forecast*). Used as input for decisions.
   - `MiningDecision` (Value Object): The output of the policy (e.g., `StartMining`, `StopMining`, `MaintainState`, `ChangeState`).
-  - `ForecastData` (Value Object): Represents the relevant solar/energy forecast.
 
 ## Energy System Monitoring
 This is a **Supporting** domain, focuses on data acquisition from the energy plant (production, storage, consumption) and to provide them to the core domain. It doesn't *decide* anything, just reports.
@@ -91,8 +89,6 @@ This is a **Generic** domain. Handles user settings, goals, and UI presentation.
 
 ## Notification System
 This is a **Generic** domain. Informing users about events.
-
-**Components**:
 
 # Context Mapping: Subdomain Interactions
 
