@@ -41,6 +41,7 @@ This is a **Supporting** domain, focuses on data acquisition from the energy pla
   - `EnergyStorage` (Entity): e.g., Battery. Has properties like `StateOfCharge` (VO), `NominalCapacity` (VO), `ActualCapacity` (VO).
   - `EnergyLoad` (Entity): Represents the user's main energy load. Contains `CurrentConsumption` (VO)
   - `EnergyReading` (Value Object): A specific measurement (e.g., 5 kW production at timestamp T).
+  - `EnergyStateSnapshot` (Value Object): Represents the state of the energy system at a point in time (*production*, *consumption*, *battery level*, *forecast*). Used as input for decisions.
 
 ## Mining Device Management
 This is a **Supporting** domain, focuses on controlling and possibly monitoring the state of the ASIC miners. Needs to execute the commands from the core domain (turn on/off) and maybe report miner status. It doesn't *decide* when to turn on/off.
