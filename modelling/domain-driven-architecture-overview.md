@@ -16,6 +16,7 @@ The identified domains are:
 - 🟣 [Energy System Monitoring](#energy-system-monitoring)
 - 🟣 [Mining Device Management](#mining-device-management)
 - 🟣 [Home Consumption Analytics](#home-consumption-analytics)
+- 🟣 [Energy Forecast](#energy-forecast)
 - 🟣 [Heat Utilization](#heat-utilization)
 - 🟣 [Mining Performance Analysis](#mining-performance-analysis)
 - ⚫ [User Settings](#user-settings)
@@ -49,6 +50,12 @@ This is a **Supporting** domain, focuses on controlling and possibly monitoring 
   - `Miner` (ASIC) (Entity): Represents a physical mining device. Has a `MinerId` (VO), `Status` (VO: *On, Off, Error*), maybe `PowerConsumption` (VO).
   - `MiningFarm` (Entity? Aggregate Root? Optional): If managing multiple miners as a group.
   - `ControlCommand` (Value Object): e.g., `TurnOn`, `TurnOff`, `SetHashboard`.
+
+## Energy Forecast
+This is a ***Supporting** domain, focuses on data collection from forecast external services and to provide them to the core domain.
+
+**Components**:
+  - `ForecastData` (Value Object): Represents the relevant solar/energy forecast.
 
 ## Home Consumption Analytics
 This is a **Supporting** domain, focuses on home energy loads forcasts. Needs to provide data (estimate consumptions, times) of the home energy loads (Washing machine, Dishwasher, Boiler, EV Charger) to the core domain. It can be a **core subdomain** (thanks to [this post](https://vladikk.com/2018/01/26/revisiting-the-basics-of-ddd/)), but let's keep it as supporting for now.
