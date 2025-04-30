@@ -16,10 +16,10 @@ The identified domains are:
 - 🟣 [Energy System Monitoring](#energy-system-monitoring)
 - 🟣 [Mining Device Management](#mining-device-management)
 - 🟣 [Home Consumption Analytics](#home-consumption-analytics)
+- 🟣 [Energy Forecast](#energy-forecast)
 - 🟣 [Heat Utilization](#heat-utilization)
 - 🟣 [Mining Performance Analysis](#mining-performance-analysis)
-- ⚫ [User Configuration](#user-configuration)
-- ⚫ [External Data Integration](#external-data-integration)
+- ⚫ [User Settings](#user-settings)
 - ⚫ [Notification System](#notification-system)
 
 ## Energy Optimization & Mining Automation
@@ -28,9 +28,7 @@ This is the **Core** domain that captures the intelligence, making smart decisio
 **Components**:
   - `OptimizationPolicy` (Entity? Aggregate Root?): A collection of rules and goals driving the automation decisions. It makes decisions based on input (e.g. "*stabilizes hashrate*", "*battery health*" or "*heats the room*").
   - `AutomationRule` (Entity? Maybe Value Object within a Policy?): Represents a user-defined or system rule (e.g., "*turn on if battery > 80% AND forecast > X*"). The *logic* itself.
-  - `EnergyStateSnapshot` (Value Object): Represents the state of the energy system at a point in time (*production*, *consumption*, *battery level*, *forecast*). Used as input for decisions.
   - `MiningDecision` (Value Object): The output of the policy (e.g., `StartMining`, `StopMining`, `MaintainState`, `ChangeState`).
-  - `ForecastData` (Value Object): Represents the relevant solar/energy forecast.
 
 ## Energy System Monitoring
 This is a **Supporting** domain, focuses on data acquisition from the energy plant (production, storage, consumption) and to provide them to the core domain. It doesn't *decide* anything, just reports.
@@ -41,6 +39,7 @@ This is a **Supporting** domain, focuses on data acquisition from the energy pla
   - `EnergyStorage` (Entity): e.g., Battery. Has properties like `StateOfCharge` (VO), `NominalCapacity` (VO), `ActualCapacity` (VO).
   - `EnergyLoad` (Entity): Represents the user's main energy load. Contains `CurrentConsumption` (VO)
   - `EnergyReading` (Value Object): A specific measurement (e.g., 5 kW production at timestamp T).
+  - `EnergyStateSnapshot` (Value Object): Represents the state of the energy system at a point in time (*production*, *consumption*, *battery level*, *forecast*). Used as input for decisions.
 
 ## Mining Device Management
 This is a **Supporting** domain, focuses on controlling and possibly monitoring the state of the ASIC miners. Needs to execute the commands from the core domain (turn on/off) and maybe report miner status. It doesn't *decide* when to turn on/off.
@@ -49,6 +48,12 @@ This is a **Supporting** domain, focuses on controlling and possibly monitoring 
   - `Miner` (ASIC) (Entity): Represents a physical mining device. Has a `MinerId` (VO), `Status` (VO: *On, Off, Error*), maybe `PowerConsumption` (VO).
   - `MiningFarm` (Entity? Aggregate Root? Optional): If managing multiple miners as a group.
   - `ControlCommand` (Value Object): e.g., `TurnOn`, `TurnOff`, `SetHashboard`.
+
+## Energy Forecast
+This is a ***Supporting** domain, focuses on data collection from forecast external services and to provide them to the core domain.
+
+**Components**:
+  - `ForecastData` (Value Object): Represents the relevant solar/energy forecast.
 
 ## Home Consumption Analytics
 This is a **Supporting** domain, focuses on home energy loads forcasts. Needs to provide data (estimate consumptions, times) of the home energy loads (Washing machine, Dishwasher, Boiler, EV Charger) to the core domain. It can be a **core subdomain** (thanks to [this post](https://vladikk.com/2018/01/26/revisiting-the-basics-of-ddd/)), but let's keep it as supporting for now.
@@ -74,7 +79,7 @@ This is a **Supporting** domain, focuses on reporting earnings, hash rates, etc.
   - `HashRate` (Value Object): Mining speed.
   - `PoolConnectionDetails` (Value Object/Entity?): Details about the mining pool being used.
 
-## User Configuration
+## User Settings
 This is a **Generic** domain. Handles user settings, goals, and UI presentation. Let's treat it as Supporting as it presents data from other domains and takes user input that influences the Core domain.
 
 **Components**:
@@ -82,17 +87,8 @@ This is a **Generic** domain. Handles user settings, goals, and UI presentation.
   - `SystemSettings` (Entity/VO): Global or specific settings.
   - `NotificationPreference` (VO): Notification settings.
 
-## External Data Integration
-Getting data from external services (e.g., Weather/Solar Forecast).
-
-**Components**:
-  - `ForecastProvider` (Interface/Adapter): Weather/solar forecast service.
-  - (Potentially) `GridDataService` (Interface/Adapter): Grid pricing integration.
-
 ## Notification System
 This is a **Generic** domain. Informing users about events.
-
-**Components**:
 
 # Context Mapping: Subdomain Interactions
 
