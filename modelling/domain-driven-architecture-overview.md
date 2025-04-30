@@ -18,8 +18,7 @@ The identified domains are:
 - 🟣 [Home Consumption Analytics](#home-consumption-analytics)
 - 🟣 [Heat Utilization](#heat-utilization)
 - 🟣 [Mining Performance Analysis](#mining-performance-analysis)
-- ⚫ [User Configuration](#user-configuration)
-- ⚫ [External Data Integration](#external-data-integration)
+- ⚫ [User Settings](#user-settings)
 - ⚫ [Notification System](#notification-system)
 
 ## Energy Optimization & Mining Automation
@@ -75,20 +74,13 @@ This is a **Supporting** domain, focuses on reporting earnings, hash rates, etc.
   - `HashRate` (Value Object): Mining speed.
   - `PoolConnectionDetails` (Value Object/Entity?): Details about the mining pool being used.
 
-## User Configuration
+## User Settings
 This is a **Generic** domain. Handles user settings, goals, and UI presentation. Let's treat it as Supporting as it presents data from other domains and takes user input that influences the Core domain.
 
 **Components**:
   - `User` (Entity): The system user.
   - `SystemSettings` (Entity/VO): Global or specific settings.
   - `NotificationPreference` (VO): Notification settings.
-
-## External Data Integration
-Getting data from external services (e.g., Weather/Solar Forecast).
-
-**Components**:
-  - `ForecastProvider` (Interface/Adapter): Weather/solar forecast service.
-  - (Potentially) `GridDataService` (Interface/Adapter): Grid pricing integration.
 
 ## Notification System
 This is a **Generic** domain. Informing users about events.
